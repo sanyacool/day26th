@@ -1,0 +1,16 @@
+
+* {margin:0px ; padding:0px}
+#wrapper {width: 1300px; height: 600px;}
+.circle{position: absolute;border-radius:50%;}
+.circle .circle {position:fixed; opacity: 1;}
+.circle .circle.opacityT {
+    animation: mymove 1s;
+    animation-fill-mode: forwards;
+ }
+ 
+@keyframes mymove {
+    0%   {opacity: 1;
+    visibility: visible;}
+    100% {opacity: 0;
+    visibility: hidden;}
+}
